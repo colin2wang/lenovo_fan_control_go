@@ -13,3 +13,6 @@ This project depends on Go 1.24.1 and the following third - party libraries:
 - `fyne.io/fyne/v2 v2.6.1`: Used for building the graphical user interface.
 
 For the complete list of dependencies, please refer to the `go.mod` file.
+
+## Screenshot
+![screenshot.png](screenshot.png)
