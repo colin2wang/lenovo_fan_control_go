@@ -1,0 +1,1 @@
+go build -o FanController.exe -ldflags "-s -w -H=windowsgui" .\gui\gui.go

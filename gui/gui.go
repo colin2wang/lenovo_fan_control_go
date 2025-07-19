@@ -188,6 +188,15 @@ func main() {
 		}
 	}()
 
+	// 设置窗口关闭时的回调
+	myWindow.SetCloseIntercept(func() {
+		// 将风扇模式设置为普通模式
+		fanControl(FanModeNormal)
+
+		// 关闭应用程序
+		myWindow.Close()
+	})
+
 	// 布局
 	content := container.NewVBox(statusLabel, btn)
 	myWindow.SetContent(content)
